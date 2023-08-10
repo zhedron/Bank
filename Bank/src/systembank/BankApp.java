@@ -1,8 +1,15 @@
 package systembank;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.util.Date;
 import java.util.Scanner;
 
 public class BankApp {
+	
+	
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -77,10 +84,6 @@ public class BankApp {
 			System.out.println("Quit");
 			break;
 		}
-		
-		if (choice != 5) {
-			BankApp.userMenu (user, sc);
-		}
 	}
 	
 	public static void depositfunds (User user, Scanner sc) {
@@ -110,6 +113,8 @@ public class BankApp {
 	public static int transfer (User user, Scanner sc) {
 		int fromAcc;
 		int toAcc = 0;
+		
+		
 		
 		do {
 			System.out.println("Enter your amount you want to transfer to another account");
