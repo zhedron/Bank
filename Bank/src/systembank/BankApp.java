@@ -114,8 +114,6 @@ public class BankApp {
 		int fromAcc;
 		int toAcc = 0;
 		
-		
-		
 		do {
 			System.out.println("Enter your amount you want to transfer to another account");
 			
