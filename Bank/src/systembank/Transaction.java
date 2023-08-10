@@ -6,13 +6,10 @@ import java.util.Date;
 public class Transaction {
 	private double amount;
 	
-	private Date timestamp;
-	
 	private Account account;
 	
-	public Transaction (double amount, Timestamp timestamp, Account account) {
+	public Transaction (double amount, Account account) {
 		this.amount = amount;
-		this.timestamp = new Date();
 		this.account = account;
 	}
 
